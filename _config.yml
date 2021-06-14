@@ -94,7 +94,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Jae-uk Oh"
+  name             : "Jae-uk 'JaykO' Oh"
   avatar           : "/assets/images/profile.jpg"
   bio              : "하고 싶은 것을 찾아다니는 사람"
   location         : "Seoul, Republic of Korea"
@@ -102,7 +102,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:wodnr44040@gmail.com"
+      # url: "mailto:wodnr44040@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
