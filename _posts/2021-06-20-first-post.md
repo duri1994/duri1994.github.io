@@ -1,0 +1,127 @@
+---
+title: "SQL 테이블 조인"
+categories:	
+  - sql
+tags:
+  - mysql
+---
+
+## 들어가며
+
+이 포스트는 테이블 간의 조인에 대한 개념 및 SQL 조인 구문에 대하여 요약하였다.
+
+- 내추럴 조인(내부조인, inner join)
+- using절, on절 : 조인 시 참조하는 컬럼명을 명확하게 표기
+- 포괄 조인(outer join)
+
+
+
+## 내추럴 조인
+
+#### 조인 join
+
+2개 이상의 테이블을 서로 묶어 하나의 결과 집합으로 만들어 내는 것
+
+- 한 테이블을 다른 테이블과 연결시킬 때 특정 컬럼을 참조하게 되는데, 이 참조 컬럼을 통해 두 테이블이 연결
+
+- 왜 조인을 하는가? 데이터의 효율적 저장, 안정성 등을 위하여(일단 지금까지 느낀 바로는 이럼)
+
+```sql
+SELECT department_id, department_name, location_id, city
+FROM departments
+[NATURAL] JOIN locations;								# NATURAL은 생략 가능 
+```
+
+- 위의 코드 예시처럼 간단히 두 테이블을 조인할 수 있다.
+- 다만, 이 경우 두 테이블의 구조를 알아야만 어떤 컬럼을 참조하고 있는지 알 수 있다는 단점이 있다.
+  - 참조 컬럼을 명확하게 보여주는 구문이 바로 아래의 USING/ON절이다.
+
+
+
+## USING / ON 절
+
+#### USING절
+
+```sql
+SELECT e.employee_id, e.last_name, d.location_id
+FROM employees e
+[NATURAL] JOIN departments d
+USING (department_id);
+```
+
+- USING절은 2개의 테이블이 어떤 컬럼을 기준으로 참조가 되어있는지 명확히 보여주는데 의의가 있다.
+  - 위의 예시의 경우: employees 테이블은 departments 테이블의 department_id 컬럼을 참조하고 있음
+  - 주의:  양쪽의 테이블에 모두 department_id라는 컬럼을 갖고 있어야 한다.
+    - 그럼 컬럼 이름이 다른 경우는 어떻게? 아래의 ON 절을 활용할 수 있음!
+- (추가정보) 위의 예시에서처럼, 각 테이블명 뒤에 별칭을 붙여 간단하게 표현할 수 있다.
+  - 테이블 별칭을 활용하여 맨 윗줄처럼 어떤 테이블의 어떤 컬럼을 select 했는지 명확하게 알 수 있다.
+
+
+
+#### ON절
+
+```sql
+SELECT e.employee_id, e.last_name, d.location_id
+FROM employees e JOIN departments d
+ON (e.department_id = d.department_id);
+```
+
+- ON절 역시, USING절처럼 내부 조인 시에 어떤 컬럼을 참조하는지 '조인 조건'을 명확히 보여준다.
+  - USING절에서 더 나아가 양쪽 테이블에서 각각 어떤 컬럼이 참조되는지 더욱 확실하게 알 수 있다.
+
+###### ON절을 활용한 3-way join(3개의 테이블 조인)
+
+```sql
+SELECT employee_id, last_name, city, department_name
+FROM employees e
+JOIN departments d
+ON d.department_id = e.department_id
+JOIN locations l
+ON d.location_id = l.location_id;
+```
+
+
+
+## 포괄 조인(outer join)
+
+포괄 조인은 어떤 레코드가 조인 조건을 만족하지 않아도 그것을 반환하도록 하는 방식이다.
+
+- 쉽게 말해, 한 쪽에 어떤 레코드에 대한 정보가 없어도 이를 누락시키지 않고 포함하여 반환을 해준다는 의미
+
+
+
+##### left outer join
+
+- 왼쪽 테이블(employees)엔 값이 있지만, 오른쪽 테이블(departments)엔 값이 없는 레코드들도 모두 반환
+
+```sql
+select e.last_name, e.department_id, d.department_id
+from employees e
+left outer join departments d
+on (e.department_id = d.department_id);
+```
+
+
+
+##### right outer join
+
+- 오른쪽 테이블(departments)엔 값이 있지만, 왼쪽 테이블(employees)엔 값이 없는 레코드들도 모두 반환
+
+```sql
+select e.last_name, e.department_id, d.department_id
+from employees e
+right outer join departments d
+on (e.department_id = d.department_id);
+```
+
+
+
+## 나가며
+
+지금까지 2개 이상의 테이블을 서로 참조하여 결과값을 출력하는 여러 가지 방법에 대해 알아보았다.
+
+다음 포스팅에선 컬럼의 평균, 최대값 등을 계산해주는 그룹 함수에 대하여 간단히 정리할 예정이다.
+
+
+
+공부한 내용이 점점 늘어가고 있다. 잘 까먹지 않게 계속 정리하고 반복하자!
