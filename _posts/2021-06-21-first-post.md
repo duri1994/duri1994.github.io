@@ -1,5 +1,5 @@
 ---
-title: "데이터 조작어(INSERT / UPDATE / DELETE), 트랜잭션"
+title: "SQL 데이터 조작어(INSERT / UPDATE / DELETE), 트랜잭션"
 categories:	
   - sql
 tags:

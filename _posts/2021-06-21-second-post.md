@@ -1,5 +1,5 @@
 ---
-title: "테이블 생성과 제약조건"
+title: "SQL 테이블 생성과 제약조건"
 categories:	
   - sql
 tags:

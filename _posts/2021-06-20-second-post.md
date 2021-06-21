@@ -4,6 +4,7 @@ categories:
   - sql
 tags:
   - mysql
+  - 개념정리
 ---
 
 # 들어가며
