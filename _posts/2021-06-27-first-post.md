@@ -1,5 +1,5 @@
 ---
-title: "프로젝트1 1~2일차 일기"
+title: "프로젝트일기: Project1 Day 1-2"
 categories:	
   - diary
 tags:
