@@ -1,5 +1,6 @@
 ---
 title: "프로젝트일기: Project1 Day 4(end)"
+date: '2021-06-28 23:44:00 +0900'
 categories:
   - diary
 tags:
