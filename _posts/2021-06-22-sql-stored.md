@@ -1,10 +1,10 @@
 ---
 title: "SQL Stored procedure, Stored function, Cursor"
 categories:	
-  - sql
+  - SQL
 tags:
-  - mysql
-  - 개념정리
+  - MySQL
+  - Concept
 ---
 
 ## 들어가며

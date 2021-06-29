@@ -1,10 +1,10 @@
 ---
 title: "SQL 그룹함수/서브쿼리"
 categories:	
-  - sql
+  - SQL
 tags:
-  - mysql
-  - 개념정리
+  - MySQL
+  - Concept
 ---
 
 # 들어가며
