@@ -7,6 +7,7 @@ tags:
   - 2021 영상처리를 위한 인공지능SW 개발자 양성과정
   - 개발일기
   - 프로젝트
+typora-root-url: ../
 ---
 
 ## 4일차(210628) 프로젝트 마무리
@@ -19,7 +20,7 @@ tags:
 
  발표 자료에 반드시 포함되어야 할 목록 중 '클래스 다이어그램'이란 생소한 것이 있었다. 인터넷으로 찾아보니 클래스 다이어그램이란 전체 프로그램에서 클래스들 간의 관계를 도식으로 표현한 그림이라고 한다. 이번 우리 프로젝트의 클래스 다이어그램을 그려보면 다음과 같았다. 
 
-![coupangproject_class_diagram](C:\Users\duri1994\duri1994.github.io\assets\images\coupangproject_class_diagram.png)
+![class_diagram](/assets/images/coupangproject_class_diagram.png)
 
  클래스 다이어그램을 직접 그려보며 여러 가지 이점들과 우리 프로젝트의 문제점들이 생각났다.
 
