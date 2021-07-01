@@ -4,7 +4,7 @@ categories:
   - Python
 tags:
   - Python3
-  - library
+  - Library
   - matplotlib
   - Concept
 ---
@@ -266,7 +266,5 @@ plt.show()
 
  이 때는 필요할 때마다 아래의 사이트에서 찾아서 활용하면 된다.
 
-
-
- matplotlib 위키독스 페이지: https://wikidocs.net/book/5011
+[]: https://wikidocs.net/book/5011	"matplotlib 위키독스 페이지"
 
