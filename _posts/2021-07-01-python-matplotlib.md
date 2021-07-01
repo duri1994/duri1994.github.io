@@ -4,9 +4,9 @@ categories:
   - Python
 tags:
   - Python3
-  - Library
   - matplotlib
   - Concept
+typora-root-url: ../
 ---
 
 # matplotlib
@@ -22,6 +22,18 @@ import matplotlib.pyplot as plt
 
 
 
+###### matplotlib에서 한글폰트 사용하기
+
+- matplotlib에서 **한글폰트를 사용하기 위해서**는 다음과 같은 코드를 실행해야 한다.
+
+```python
+# 한글 폰트(맑은고딕체)를 사용하기 위한 코드
+plt.rcParams['font.family'] = 'Malgun Gothic'
+plt.rcParams['axes.unicode_minus'] = False
+```
+
+
+
 ##### 1. 기본적인 그래프 plot
 
 ```
@@ -31,7 +43,7 @@ plt.plot(x, y)
 plt.show()
 ```
 
-![](C:\Users\duri1994\duri1994.github.io\assets\images\post_image\concept_matplotlib\res1.png)
+<img src = "/assets/images/post_image/concept_matplotlib/res1.png"/>
 
 
 
@@ -266,5 +278,7 @@ plt.show()
 
  이 때는 필요할 때마다 아래의 사이트에서 찾아서 활용하면 된다.
 
-[]: https://wikidocs.net/book/5011	"matplotlib 위키독스 페이지"
+
+
+ matplotlib 위키독스 페이지: https://wikidocs.net/book/5011
 
