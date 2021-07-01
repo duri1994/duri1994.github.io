@@ -56,7 +56,7 @@ plt.ylabel('y_label')	# y축 이름
 plt.show()
 ```
 
-![](C:\Users\duri1994\duri1994.github.io\assets\images\post_image\concept_matplotlib\res2.png)
+<img src = "/assets/images/post_image/concept_matplotlib/res2.png"/>
 
 ###### cf. 컬러, 선스타일, 마커 약어
 
@@ -90,7 +90,7 @@ plt.plot(x, y3)
 plt.show()
 ```
 
-![](C:\Users\duri1994\duri1994.github.io\assets\images\post_image\concept_matplotlib\res3.png)
+<img src = "/assets/images/post_image/concept_matplotlib/res3.png"/>
 
 
 
@@ -107,9 +107,9 @@ plt.plot(x, y2)
 plt.show()
 ```
 
-![](C:\Users\duri1994\duri1994.github.io\assets\images\post_image\concept_matplotlib\res4.png)
+<img src = "/assets/images/post_image/concept_matplotlib/res4.png"/>
 
-![](C:\Users\duri1994\duri1994.github.io\assets\images\post_image\concept_matplotlib\res5.png)
+<img src = "/assets/images/post_image/concept_matplotlib/res5.png"/>
 
 
 
@@ -129,9 +129,9 @@ plt.plot(x, y2)
 plt.show()
 ```
 
-![](C:\Users\duri1994\duri1994.github.io\assets\images\post_image\concept_matplotlib\res6.png)
+<img src = "/assets/images/post_image/concept_matplotlib/res6.png"/>
 
-![](C:\Users\duri1994\duri1994.github.io\assets\images\post_image\concept_matplotlib\res7.png)
+<img src = "/assets/images/post_image/concept_matplotlib/res7.png"/>
 
 
 
@@ -158,7 +158,7 @@ plt.plot(x, y4)
 plt.show()
 ```
 
-![](C:\Users\duri1994\duri1994.github.io\assets\images\post_image\concept_matplotlib\res8.png)
+<img src = "/assets/images/post_image/concept_matplotlib/res8.png"/>
 
 
 
@@ -177,7 +177,7 @@ plt.xticks(idx, x) # x축에 사용할 값 지정
 plt.show()
 ```
 
-![](C:\Users\duri1994\duri1994.github.io\assets\images\post_image\concept_matplotlib\res9.png)
+<img src = "/assets/images/post_image/concept_matplotlib/res9.png"/>
 
 
 
@@ -204,13 +204,82 @@ for x, y, name in zip(lon, lat, city): # 각 원 위치마다 도시 이름이 �
 plt.show()
 ```
 
-![](C:\Users\duri1994\duri1994.github.io\assets\images\post_image\concept_matplotlib\res10.png)
+<img src = "/assets/images/post_image/concept_matplotlib/res10.png"/>
 
 
 
 ###### cf. **zip**: **여러개의 리스트를 <u>묶어서 슬라이싱</u>**해주는 파이썬 내장함수
 
-![](C:\Users\duri1994\duri1994.github.io\assets\images\post_image\concept_matplotlib\zip_func_explanation.PNG)
+<img src = "/assets/images/post_image/concept_matplotlib/zip_func_explanation.png)"/>
+
+
+
+- 히스토그램
+
+```python
+# 히스토그램
+x = [43, 67, 87, 76, 54, 34, 56, 76, 89, 98, 100, 87, 65, 43, 23] # 점수
+
+
+# plt.hist(y, bins: 히스토그램 분포를 표현할 구간을 나누는 횟수)
+# bins에 정수n이 들어가면 n+1개의 구간이 생긴다.
+plt.hist(x, bins=7)
+plt.show()
+```
+
+<img src = "/assets/images/post_image/concept_matplotlib/res11.png"/>
+
+
+
+- 원 그래프(파이 그래프)
+
+```python
+# 원 그래프(파이 그래프)
+fruit = ['사과', '바나나', '딸기', '오렌지', '포도']
+result = [7,6,3,2,2]
+
+# plt.pie(result, labels=fruit, autopct='%.1f%%')
+# autopct='%.1f%%': 소수점1자리로 비율표시
+# 방향 변경 가능: counterclock=False(시계), True(반시계, default)
+# 첫번째 항목의 위치변경: startangle = 각도
+# explode: 항목별로 중심에서 떨어뜨릴 거리 설정
+ex = [0.1,0,0,0,0]
+plt.pie(result, 
+        labels=fruit, 
+        autopct='%.1f%%', 
+        counterclock=False, 
+        startangle=90,
+        explode=ex
+       )
+plt.show()
+```
+
+<img src = "/assets/images/post_image/concept_matplotlib/res12.png"/>
+
+
+
+##### 4. 시리즈/데이터로부터 곧바로 plotting
+
+```python
+# 시리즈를 바로 plotting
+s1 = pd.Series([1,2,3,4,5,6,7,8,9,10])
+s1.plot() # x축: 인덱스 / y축: 값
+plt.show()
+```
+
+<img src = "/assets/images/post_image/concept_matplotlib/res13.png"/>
+
+```python
+# 데이터프레임을 바로 plotting
+arr = np.arange(12).reshape(3,4)
+idx = ['row1', 'row2', 'row3']
+cols = ['c1', 'c2', 'c3', 'c4']
+d1 = pd.DataFrame(arr, index=idx, columns=cols)
+d1.plot()
+plt.show()
+```
+
+<img src = "/assets/images/post_image/concept_matplotlib/res14.png"/>
 
 
 
@@ -249,7 +318,7 @@ plt.yticks(np.arange(215000, 240000, 5000), ('215k', '220k', '225k', '230k', '23
 plt.show()
 ```
 
-![](C:\Users\duri1994\duri1994.github.io\assets\images\post_image\concept_matplotlib\example1.png)
+<img src = "/assets/images/post_image/concept_matplotlib/example1.png"/>
 
 #### 막대그래프
 
@@ -268,7 +337,7 @@ plt.ylim(200000, 240000) # 축 범위 지정(ylim(시작값, 끝값))
 plt.show()
 ```
 
-![](C:\Users\duri1994\duri1994.github.io\assets\images\post_image\concept_matplotlib\example2.png)
+<img src = "/assets/images/post_image/concept_matplotlib/example2.png"/>
 
 
 
