@@ -4,6 +4,7 @@ categories:
   - Python
 tags:
   - Python3
+  - library
   - NumPy
   - Concept
 ---
