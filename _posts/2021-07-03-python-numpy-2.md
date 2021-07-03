@@ -1,16 +1,13 @@
 ---
 title: "파이썬: NumPy 기본2 - 배열 생성/처리"
 categories:	
-
   - Python
-    tags:
+tags:
   - Python3
   - Library
   - NumPy
   - Concept
 ---
-
-
 
 ## NumPy의 기능
 
