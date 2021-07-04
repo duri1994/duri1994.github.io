@@ -1,10 +1,11 @@
 ---
 title: "프로젝트일기: Project1 Day 1-2"
 categories:	
-  - diary
+  - Diary
 tags:
   - 개발일기
   - 프로젝트
+  - 인공지능SW개발자양성과정
 ---
 
 ## 드디어, 첫 프로젝트

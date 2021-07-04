@@ -1,12 +1,12 @@
 ---
 title: "프로젝트일기: Project1 Day 4(end)"
 date: '2021-06-28 23:44:00 +0900'
-categories:
-  - diary
+categories:	
+  - Diary
 tags:
-  - 2021 영상처리를 위한 인공지능SW 개발자 양성과정
   - 개발일기
   - 프로젝트
+  - 인공지능SW개발자양성과정
 typora-root-url: ../
 ---
 

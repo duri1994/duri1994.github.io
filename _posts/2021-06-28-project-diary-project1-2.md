@@ -1,10 +1,11 @@
 ---
 title: "프로젝트일기: Project1 Day 3"
 categories:	
-  - diary
+  - Diary
 tags:
   - 개발일기
   - 프로젝트
+  - 인공지능SW개발자양성과정
 ---
 
 ## 3일차(210624) 예상치 못한 문제. 창의적인 로직 고민
