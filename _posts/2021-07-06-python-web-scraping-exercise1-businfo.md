@@ -1,13 +1,10 @@
 ---
-title: "파이썬 웹 스크래핑 실습: 오픈 API를 통한 실시간 공공데이터 활용 - 서울시 버스노선정보"
+title: "파이썬: 오픈 API를 통한 실시간 공공데이터 활용 - 서울시 버스노선정보"
 categories:	
   - Python
 tags:
   - Python3
-  - 실습
   - Web Scraping
-  - Requests
-  - BeautifulSoup
 ---
 
 # 실습 문제
