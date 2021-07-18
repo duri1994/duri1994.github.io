@@ -1,5 +1,5 @@
 ---
-title: "알고리즘 특강 Week2: 완전탐색 연습문제 - 숫자카드2"
+title: "알고리즘 특강 Week2: 완전탐색 연습문제 - 소수찾기"
 categories:	
   - Algorithm
 tags:
@@ -88,7 +88,7 @@ def solution(numbers):
     - `itertools.permutation`의 반환값은 tuple들로 이루어진 object이다.
     - 따라서, for문을 통해 하나의 숫자로 이어붙이고  int형으로 바꿔준 뒤 list에 추가한다.
   - nums list의 중복된 숫자를 제거한다.
-    - set는 중복을 허용하지 않는 자료형이므로 `set()`을 통해 중복을 제거한 뒤 다시 lis로 바꾼다.
+    - set는 중복을 허용하지 않는 자료형이므로 `set()`을 통해 중복을 제거한 뒤 다시 list로 바꾼다.
   - 정제된 list 안의 숫자들을 하나하나 소수 체크를 해준다.
 
 
