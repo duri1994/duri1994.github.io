@@ -1,5 +1,5 @@
 ---
-title: "알고리즘 특강 Week1: 스택과 큐 개념"
+title: "알고리즘: 스택과 큐 개념"
 categories:	
   - Algorithm
 tags:
