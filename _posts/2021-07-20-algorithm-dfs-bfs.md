@@ -8,11 +8,11 @@ tags:
 typora-root-url: ../
 ---
 
-설명에 앞서 DFS와 BFS를 그림으로 비교해보면 다음과 같다.
+DFS와 BFS는 대표적인 탐색 알고리즘이다.
+
+자세한 설명에 앞서 DFS와 BFS 과정을 그림으로 비교해보면 다음과 같다.
 
 <img src = "/assets/images/post_image/algorithm/dfs_bfs.gif"/>
-
-<br/>
 
 
 
@@ -65,8 +65,8 @@ return false
 
 #### 개요
 
-- Breadth First Search
-- 트리나 그래프에서 동일한 깊이의 모든 경우의 수를 차례대로 조사한다.
+- **Breadth** First Search
+- 트리나 그래프에서 **동일한 깊이**의 모든 경우의 수를 차례대로 조사한다.
 - 이후에 다음 깊이로 들어가 모든 경우의 수를 조사하는 과정을 반복하며 해를 찾는 과정이다.
 
 
