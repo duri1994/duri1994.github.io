@@ -1,5 +1,5 @@
 ---
-title: "[Baekjoon] #2745 진법 변환
+title: "[Baekjoon] #2745 진법 변환"
 categories:	
   - CodingTest  
 tags:

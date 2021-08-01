@@ -1,5 +1,5 @@
 ---
-title: "[Baekjoon] #5692 팩토리얼 진법
+title: "[Baekjoon] #5692 팩토리얼 진법"
 categories:	
   - CodingTest  
 tags:
