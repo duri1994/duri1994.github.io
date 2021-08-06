@@ -1,9 +1,11 @@
 ---
-title: "알고리즘 특강 Week6: 재귀함수"
+title: "알고리즘 특강 Week6: 재귀함수 + [Baekjoon] # 10872 팩토리얼 변환"
 categories:	
   - Algorithm
+  - CodingTest
 tags:
   - Concept
+  - Python3
 ---
 
 코딩테스트에서 정말 자주 활용되는 **재귀함수**에 대하여 정리하고자 한다.
@@ -80,12 +82,17 @@ print(result)
 ##### 참고: 재귀함수를 활용한 팩토리얼 및 피보나치수열 구현
 
 ```python
+# Baekjoon #10872 팩토리얼 문항 풀이
 def facto(n):
     if n==1:
         return 1
     else:
         return n*facto(n-1)
     
+n = int(input())
+print(facto(n))
+
+# 피보나치 수열 구현
 def fibo(n):
     if n<2:
         return 1
