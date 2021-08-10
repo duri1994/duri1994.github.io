@@ -45,8 +45,6 @@ def fib(n):
     for i in range(2, n+1):
         flist.append(flist[i-2]+flist[i-1])
     return flist[-1] # 마지막 항 반환
-
-    
 ```
 
 (2) **Top-Down 방식**
@@ -117,8 +115,8 @@ def solution(data):
 		return data[0]
     res = [data[0], max(data[0], data[1])] # Memoization List
     for i in range(2, len(data)):
-        res.append(max(res[i-1], res[i-2]+data[i]))
-   	return res[-1]   
+    	res.append(max(res[i-1], res[i-2]+data[i]))
+    return res[-1]   
 ```
 
 <br>
