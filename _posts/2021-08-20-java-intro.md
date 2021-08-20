@@ -56,7 +56,7 @@ tags:
 
 - i.e. 자동차, 책, 냉장고, 홍길동
 
-
+<br>
 
 ###### API(Application Programming Interface)
 
@@ -65,7 +65,7 @@ tags:
   - `*.jar`
   - JavaSE API 모음: `t.jar`
 
-
+<br>
 
 ###### OS(플랫폼) 독립적(platform independency)
 
@@ -81,7 +81,7 @@ tags:
 
   - **JDK = JRE + TOOLS**(`javac.exe` (컴파일러) 등)
 
-
+<br>
 
 ###### 개발언어의 작동방식 종류
 
@@ -185,13 +185,13 @@ tags:
   - 예약어는 아니지만 식별자로 사용 자제: sizeof
   - 예약어처럼 사용되는 상수: true/false, null
 
-
+<br>
 
 # 2. Java 개발환경 구축
 
 #### 설치 프로그램 목록
 
-##### 	1. JDK(자바 개발 도구)
+1. JDK(자바 개발 도구)
 
 - 자바 개발환경
 - [오라클홈페이지](https://www.oracle.con/index.html) > 상단 products > software > java
@@ -208,7 +208,7 @@ tags:
 
 <br>
 
-##### 	2. Eclipse(IDE)
+2. Eclipse(IDE)
 
 - 통합 개발환경 tool
   - 장점: 오픈소스
