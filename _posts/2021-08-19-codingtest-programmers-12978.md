@@ -85,7 +85,7 @@ def solution(N, road, K):
     values = [sys.maxsize for _ in range(N+1)] # 경로길이배열(default값: sys.maxsize)
     road_dict = {i: {} for i in range(1, N+1)} # 최단경로 연결관계 정보를 갖는 딕셔너리(for 효율적 탐색)
 
-    # road_dict 채워넣기(road_dict의 key는 마을, value는 {연결점: 최소경로길이])
+    # road_dict 채워넣기(road_dict의 key는 마을, value는 {연결점 : 최소경로길이}])
     for r in road: # r: (마을1, 마을2, 경로길이)
         if r[0] in road_dict and r[1] in road_dict[r[0]]: # 기존에 해당 마을간에 연결된 다른 경로가 있는 경우
             road_dict[r[0]][r[1]] = min(road_dict[r[0]][r[1]], r[2])
