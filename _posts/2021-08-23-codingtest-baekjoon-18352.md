@@ -1,5 +1,5 @@
 ---
-​---title: "[Baekjoon] #18352 특정거리의 도시 찾기"
+title: "[Baekjoon] #18352 특정거리의 도시 찾기"
 categories:	
   - CodingTest  
 tags:
