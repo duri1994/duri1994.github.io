@@ -18,9 +18,9 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 locale                   : "en-US"
 title                    : "Dev JaykO"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "새로운 개발의 원천은 게으름이다."
 name                     : "Jae-uk 'JaykO' Oh"
-description              : "하고 싶은 것을 찾아다니는 사람"
+description              : "게발자: 게(으른) (개)발자"
 url                      : "https://duri1994.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : duri1994/duri1994.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
